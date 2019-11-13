@@ -51,7 +51,7 @@ public class GithubOrgMembershipService implements MembershipService {
 
     /**
      check role
-     * @param oAuth2AuthenticationToken oauth token 
+     * @param oAuth2AuthenticationToken oauthToken 
      * @return is current logged in user a member but NOT an admin of the github org?
      * */
 
