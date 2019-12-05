@@ -1,16 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EqSearch.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">lab07</a> &gt; <a href="index.source.html" class="el_package">earthquakes.searches</a> &gt; <span class="el_source">EqSearch.java</span></div><h1>EqSearch.java</h1><pre class="source lang-java linenums">package earthquakes.searches;
 
-<span class="fc" id="L3">public class EqSearch {</span>
+public class EqSearch {
+
+<span class="fc" id="L5">    EqSearch(){</span>
+<span class="fc" id="L6">        distance = 0;</span>
+<span class="fc" id="L7">        minmag = 0;</span>
+<span class="fc" id="L8">        lat = 0;</span>
+<span class="fc" id="L9">        lon = 0;</span>
+<span class="fc" id="L10">        location = &quot;&quot;;</span>
+<span class="fc" id="L11">    } </span>
+
     
     private int distance;
     private int minmag;
+    private double lat;
+    private double lon;
+    private String location;
+    
+<span class="nc" id="L20">    public void setDistance(int distance) { this.distance = distance; }</span>
 
-<span class="nc" id="L8">    public void setDistance(int distance) { this.distance = distance; }</span>
+<span class="nc" id="L22">    public void setMinmag(int minmag) { this.minmag = minmag; }</span>
 
-<span class="nc" id="L10">    public void setMinmag(int minmag) { this.minmag = minmag; }</span>
+<span class="nc" id="L24">    public void setLat(double lat) { this.lat = lat; }</span>
 
-<span class="fc" id="L12">    public int getDistance() { return distance; }</span>
+<span class="nc" id="L26">    public void setLon(double lon) { this.lon = lon; }</span>
 
-<span class="fc" id="L14">    public int getMinmag() { return minmag; }</span>
+<span class="nc" id="L28">    public void setLocation(String loc) { this.location = loc; }</span>
+
+<span class="fc" id="L30">    public int getDistance() { return distance; }</span>
+
+<span class="fc" id="L32">    public int getMinmag() { return minmag; }</span>
+
+<span class="fc" id="L34">    public double getLat() { return lat; }</span>
+<span class="fc" id="L35">    public double getLon(){ return lon; }</span>
+<span class="fc" id="L36">    public String getLocation() {return location;}</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
